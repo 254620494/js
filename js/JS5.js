@@ -60,8 +60,8 @@ for( var i=0; i<dayNum;i++){
         } 
     
     }
-        
- 	str +=	 '  <div class="result_bottom_block">'
+    if(night){
+    	str +=	 '  <div class="result_bottom_block">'
 	str +=		'	<div class="result_bottom_block_text">'
 	str +=			'	<div class="textOne">第' +toChinese(i+1) +'天</div>'
 	str +=			'	<div class="textThree">'
@@ -70,6 +70,8 @@ for( var i=0; i<dayNum;i++){
 	str +=				'</div>'
 	str +=			'</div>'
 	str +=		'</div>'
+    }
+ 	
 }
 
 $('.result_bottom').append(str);

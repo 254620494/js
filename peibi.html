@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>   
+		<meta http-equiv="Content-Type" 
+			content="text/html;charset=utf-8" >  
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Choose Version</title>
+		<link rel="stylesheet" href="css/Task6.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet/less" href="css/peibi.less"> 
+		 
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script> 
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
+ </head>
+ 
+ 
+	<body> 
+	
+	<header>
+		
+	<div class="header">
+		<div class="head_left">
+			<span class="glyphicon glyphicon-menu-left"> </span>
+		</div> 
+		<span class="two">参数设置</span>
+		<i class="fa fa-question-circle-o fa-4x right" aria-hidden="true"></i>
+	</div>
+ 
+ 	<div class="Topp">
+ 		<span>玩家配比</span>
+ 	</div>
+ 
+ 	<div class="Num">
+ 		<span>杀手 <span id="killer">2</span> &nbsp;&nbsp;&nbsp;&nbsp;人</span>
+ 		<div class="span2">平民 <span id="normal">4</span>&nbsp;&nbsp;&nbsp;  人</div>
+ 	</div>
+
+ 	<div class="NumInput" >
+
+ 		<span>请输入玩家数量</span> <input type="text" id="number2"  onchange="number()" value="8">
+ 		<span class="orange">玩家数量为4-18</span>
+ 	</div>
+
+ 
+ 
+ 	<div class="boxx">
+ 		<input type="button" class="BtLef" onclick="BtLeft()">
+ 		<input type="range" value="11" max="18" min="4" step="1" id="inputBut" oninput="change()">
+ 		<input type="button" class="BtRig" onclick="BtRight()">
+ 	</div>
+  
+ 	<div class="fapai" onclick="go()" id="paixu"><span>去发牌</span></div>
+ 
+ 
+ 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script  src="js/new_file.js" ></script>
+	</body>
+</html>

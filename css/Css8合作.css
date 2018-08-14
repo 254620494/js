@@ -1,0 +1,196 @@
+body{
+	font-family: "微软雅黑";
+	margin: 0;
+	height: 100%;
+	background-color: #fafafa;
+}
+
+.shouye{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	width: 60%;
+	left: 18%;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+.block{
+	position: relative;
+	left: 18%;
+	width: 64%;
+}
+.block_lef{
+	float: left;
+	position: absolute;
+	width: 30%;
+
+	background-color: white;
+	text-align: center;
+	
+}
+
+.hzz img{
+	width: 100%;
+}
+.hz{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	width:100%;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-bottom: 1px solid gainsboro;
+}
+.uaa>li{
+	position: relative;
+	font-size: 1em;
+	padding:20px;
+	list-style:none;
+	text-align: center;
+	left: -4%;
+}
+@media only screen and (max-width:1200px ) {
+	.block{
+	position: relative;
+	left:0px;
+	width: 100%;
+}
+	.block_lef{
+	float: none;
+	position:relative;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+	.uaa>li{
+	position:relative;
+	font-size: 1em;
+	display: inline-block;
+	float: none;
+	
+	list-style:none;
+	text-align: center;
+	left: 0;
+}
+	.hz{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+
+	font-size: 1.2em;
+	font-weight: 700;
+	border-bottom: 1px solid gainsboro;
+}
+}
+a{
+	color:#29b078;
+}
+ul>li a:visited,
+ul>li a:link,
+{
+	color:#aadac3;
+	text-decoration: none;
+}
+ul>li a:hover{
+	color: orange;
+	text-decoration: none;
+
+}
+ul>li a:hover::before{
+	background-color: currentcolor;
+}
+.uaa>li a:before{
+	border:1px solid goldenrod;
+	content: "";
+	position: absolute;
+	top: 25px;
+	right: 200px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+
+}
+.block_rig{
+	float: left;
+	left: 35%;
+	width: 70%;
+	background-color: white;
+	position: relative;
+}
+.block_rig img{
+	float: left;
+}
+.rig_Top{
+	position: relative;
+	width: 100%;
+	height: 180px;
+	border-bottom:1px solid gainsboro;
+}
+.rig_text{
+	position: relative;
+	top: 50px;
+}
+.rig_Mid{
+	position: relative;
+	top: 0px;
+	padding: 40px;
+	text-indent: 2em;
+	color: gray;
+	font-size: 1.1em;
+	line-height: 2em;
+}
+div{
+	border: 1px solid red;
+}
+.lastT{
+	position: absolute;
+	top:1550px ;
+	width: 100%;
+	background-color: #26a26f;
+	height: 200px;
+}
+@media only screen and (max-width: 1200px) {
+	.uaa>li a:before{
+	border:1px solid goldenrod;
+	content: "";
+	position: absolute;
+	top: 25px;
+	right:80px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+
+}
+	.block_rig img{
+	float:none;
+	width: 300px;
+	height: 50%;
+}
+	.rig_text{
+	position: relative;
+	
+	top: 0px;
+	text-indent: 2em;
+}
+	.block_rig{
+	position: relative;
+	float: none;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	
+}
+	.rig_Top{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border-bottom:1px solid gainsboro;
+}
+	.lastT{
+	position:relative;
+	top: 0px ;
+	width: 100%;
+	background-color: #26a26f;
+	height:auto;
+}
+}

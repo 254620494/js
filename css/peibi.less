@@ -1,0 +1,143 @@
+body{
+    background-color: #f0f0f0;
+    width: 100%;
+}
+.Topp{
+    position: relative;
+    text-align: center;
+    margin: 5px;
+    height: 40px; 
+    background-color: white;
+    span{
+        font-size: 1.4em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+    }
+}
+.Num{
+    position: relative;
+    top: 80px;
+    height: 150px;
+    input[type="text"]{
+            width: 20px;
+            border: 1px solid #f0f0f0;
+            background-color: #f0f0f0;
+        }
+    span{
+        padding-top: 20px;
+        font-family: "微软雅黑";
+        font-size: 1.2em;
+        font-weight: 700;
+        position:absolute;
+        left:18%;
+        span{
+            position: absolute;
+            left: 40px;
+            top: -2px;
+        }
+        
+    }
+    .span2{
+        padding-top: 20px;
+        font-family: "微软雅黑";
+        font-size: 1.2em;
+        font-weight: 700;
+        position:absolute;
+        right: 18%;
+        span{
+            position: absolute;
+            left: 40px;
+            top: -2px;
+        }
+    }
+}
+.Num2{
+    width:100%;
+    height: 100%;
+}
+.NumInput{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    height: 200px; 
+    top: 65%;
+    >span{
+        padding-top: 20px;
+        font-family: "微软雅黑";
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    input[type="text"]{
+        width: 30px;
+        border-radius: 5px;
+        border: 1px solid gainsboro;
+        background-color: gainsboro;
+        color: orange;
+        font-size: 1.2em;
+    }
+    .orange{
+        color:orange;
+        font-size: 1em;
+    }
+}
+.boxx{
+    display: flex;
+    width: 70%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    .BtLef{
+        margin-right: 10px;
+        border: 1px solid black;
+    }
+    .BtRig{
+        margin-left: 10px;
+    }
+}
+
+input[type="button"]{
+    
+    border: 1px solid lightcoral;
+    width: 20px;
+    background-color: pink;
+}
+input[type="range"]{
+    -webkit-appearance: none;   
+    position: relative;
+    cursor: pointer;
+    height: 10px;
+    background-color: gainsboro;
+    background:-webkit-linear-gradient(#61bd12, #61bd12) no-repeat,#ddd;
+       background-size:100%;
+    top: 10px;
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {  
+    -webkit-appearance: none;/*清除系统默认样式*/  
+    height:16px;/*拖动块高度*/  
+    width: 25px;/*拖动块宽度*/  
+    background: #fff;/*拖动块背景*/  
+    border-radius: 5px ; /*外观设置为圆形*/  
+    border: 1px solid yellow;
+}
+.fapai{
+    position: absolute;
+    bottom: 30px;
+    width: 70%;
+    left: 15%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 30px;
+    font-size: 1.8em;
+    span{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        -webkit-transform: translate(-50%,-50%);
+    }
+}

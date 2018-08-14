@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Content-Type" 
+			content="text/html;charset=utf-8" >  
+		<meta name="viewport" content="width=device-width, 
+			initial-scale=1">
+		<title>Vote</title>
+		<link rel="stylesheet" href="css/Task6.css" type="text/css">
+		<link rel="stylesheet" 
+		href="css/bootstrap.css">
+ 		<script src="js/jquery-3.3.1.min.js"></script>
+ 		<script src="js/bootstrap.min.js"></script> 
+ 		<script type="text/javascript">
+ 			function pl(){
+ 			var aud=document.getElementById("audio");
+ 				if(aud.paused){
+ 					aud.play();
+ 				}
+ 				else{
+ 					aud.pause();
+ 				}
+ 			}
+ 			
+ 		</script>
+	</head>
+	
+	<body style="background-color: #29bde0;">
+
+	
+	<div class="square">
+		
+		<span class="center">法官日记</span>
+		
+	<!--	<span class="left">
+		<img src="img/矩形.png">
+		</span>
+		<span class="right">
+			<img src="img/chacha.png">
+		</span>
+	-->
+	</div>
+	
+<!--	<div class="speak">
+		<div class="speak_text">发言讨论结束，请大家投票</div>
+		<audio autoplay="autoplay"  id="audio">
+			<source src="深澤秀行 - 午後の眠り.mp3" type="audio/mp3"></source>
+		</audio>
+		<span class="glyphicon glyphicon-play-circle"
+			style="font-size: 2em; color: orange;
+			position: absolute;top:20%;right: 10px;"
+			onclick="pl();"></span>
+			
+		<span class="glyphicon glyphicon-triangle-bottom" 
+			style="position: relative; top: 21px; left: 50px;
+			color: #b9e9f5;"></span>
+	</div>
+	<div class="click">点击得票数最多人的头像</div>	-->
+	<div class="allBlock">
+		<div class="gamer-vote" id="gamersVote">
+		</div>
+	</div>
+	
+	
+
+	<div class="die">
+		<div class="die_input"  id="btn-two">确定</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="js/JSrizhi.js"></script>
+	
+	</body>
+</html>

@@ -1,0 +1,495 @@
+@base:#29bde0;
+@rel:relative;
+@abs:absolute;
+@var1:100%;
+@he70:70px;
+
+
+
+body{
+    margin:0;
+    background-color: #f0f0f0;
+}
+.alll{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.page{
+    flex-shrink: 0;
+    flex-basis: 100%;
+    background: @base;
+}
+.leftside{
+    display: none;
+    flex: 0 0 65%;
+    color: @base;
+    background-color: white;
+    height: 1200px;
+    ul{
+        padding: 0;
+        list-style: none;
+        position: @rel;
+        top:40px ;
+        left: 20px;
+        width: 90%;
+        height: 100%;
+        li{
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            border-bottom: 1px solid gainsboro;
+        }
+        .fa{
+                width: 30px;
+                margin-right: .2rem;
+                border: 3px solid currentColor;
+                text-align: center;
+                border-radius: 50%;
+                padding-top: 2px;
+                
+            }
+        .fa-chevron-right{
+                    float: right;
+                    border: none;
+                }
+    }
+}
+.header{
+    position: @rel;
+    width: @var1;
+    height: @he70;
+    background-color: @base;
+    
+    .head_left{
+        position: @rel;
+        top: 21px;
+        left: 15px;
+        width: 10px;
+        font-size: 1.5em;
+        color:white;
+        button{
+            border: 0;
+            background: transparent;
+            outline: none;
+        }
+    }
+}
+
+.lastgame{
+    position: @rel;
+    width: 100%;
+    height: @he70;
+    padding: 20px;
+    font-size: 1.5em;
+    .lastgame_inside{
+        background-color: white;
+        position: @rel;
+        text-align: center;
+        color:gray;
+        line-height: 3em;
+        border: 1px solid gainsboro;
+        span{
+            position: @abs;
+            right:0 ;
+            top: 20px;
+        }
+    }
+}
+.gameup{
+    width: 100%;
+    height: 450px;
+    position: @rel;
+}
+.game{
+    width: 100%;
+    position: @abs;
+    top: 0px;
+    height: auto;
+    font-size: 1.5em;
+    bottom: 2%;
+    padding: 20px;
+}
+.game_inside{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid gainsboro;
+    .game_top{
+        position: @rel;
+        text-align: center;
+        height: 12%;
+        border-bottom: 1px solid #fbb435;
+        color:#fbb435;
+        
+    }
+    .version{
+        position: @rel;
+        height: 85%;
+        padding: 10px 30px;
+        width: 100%;
+        .version_All{
+            position: @rel;
+            background-color:#29bde0 ;
+            height: 17%;
+            width: 100%;
+            color: yellow;
+            margin: 0.5%;
+        }
+        .version_Num{
+            position: @rel;
+            color: gray;
+            font-size: 0.8em;
+            height: 12%;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            .version_text{
+                position: @rel;
+                top: 50%;
+                -webkit-transform:translateY(-50%);
+            }
+        }
+        .imgg{
+            position: @abs;
+            right: 0px;
+            top: 45%;
+            -webkit-transform:translateY(-50%);
+            span{
+                font-size: 1.5em;
+                color:orange;
+            }
+        }
+
+    }
+}
+.game_top_text{
+            position: @abs;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+        }
+
+.circle{
+    position: @abs;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+}
+
+
+/*--第二个-----------------------------------------------------*/
+
+
+.square{
+    position: @rel;
+    width: 100%;
+    img{
+        width:25px ;
+        top: 20px;
+    }
+    .left{
+    position: @rel;
+    left: 18px;
+    top: 25px;
+    }
+    .right{
+    position:@abs;
+    right:18px ;
+    top:8px ;
+    }
+    .center{
+    position: @abs;
+    top: 23px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    }
+    
+}
+
+.speak{
+    position: @rel;
+    top: 40px;
+    width: 100%;
+    height: 50px;
+    background-color:#b9e9f5;
+    .speak_text{
+        position: @rel;
+        top: 13px;
+        left: 20px;
+        font-size: 1.2em;
+        width: 80%;
+    }
+    .one{
+        font-size: 2em; 
+        color: orange;
+        position: @abs;
+        top:20%;
+        right: 10px;
+    }
+    .two{
+        position: relative; 
+        top: 21px; 
+        left: 50px;
+        color: #b9e9f5;
+    }
+}
+.click{
+    width: 80%;
+    position: @rel;
+    top: 50px;
+    left: 50px;
+    color:  whitesmoke;
+    font-size: 1em;
+    letter-spacing: 1.3px;
+}
+
+
+
+.allBlock{
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    position: @abs;
+    top: 170px;
+    bottom: 80px;
+    z-index: -1;
+    .threeBlock{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        .lastBlock_one{
+            position: @abs;
+            left: 5%;
+            width: 80px;
+            height: 80px;
+            background-color: #f5c97b;
+            border: 4px solid white ;
+            text-align: center;
+            font-size: 1.2em;
+            
+        }
+        .lastBlock_two{
+            position: @abs;
+            right: 5%;
+            width: 80px;
+            height: 80px;
+            background-color:#f5c97b;
+            border: 4px solid white ;
+        }
+        .lastBlock_three{
+            position: @abs;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            background-color: #f5c97b;
+            border: 4px solid white;
+            
+        }
+    }
+}
+.lastNum{
+    position: @abs;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background-color: #83b09a;
+    color: white;
+    font-size: 16px;
+}
+.lastName{
+    position: @abs;
+    width: 100%;
+    text-align: center;
+    top: 20%;
+    color: gray;
+
+}
+.chooseBlock{
+    position: @abs;
+    display:none;
+    width: 100px;
+    left: -12px;
+    height: 20px;
+    top: 75px;
+    z-index: 222;
+}
+.lastBlock_one:hover .chooseBlock{
+    display:inline-block;
+}
+.lastBlock_two:hover .chooseBlock{
+    display:inline-block;
+}
+.lastBlock_three:hover .chooseBlock{
+    display:inline-block;
+}
+
+.chooseBlock img{
+    width: 20px;
+}
+.right img{
+    position: @abs;
+    right: 0;
+}
+.die{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1111;
+    .die_input{
+        position:@rel;
+        width: 80%;
+        left: 10%;
+        background-color: orange;
+        text-align: center;
+        line-height: 2em;
+        font-size:2em;
+        color: white;
+    }
+
+}
+
+/*--------------------------第三---------------------------------*/
+
+.result_mid{
+    position: @rel;
+    width: 100%;
+    top: 40px;
+}
+.result_mid_top{
+    
+    img{
+        height: 100px;
+        position: @abs;
+        top: 40px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+    }
+    .one{
+        width: 60px;
+        height: 60px;
+    }
+    &_text{
+        position: @abs;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        top: 100px;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
+.result_mid_mid{
+    width: 80%;
+    position: @abs;
+    left: 10%;
+    font-family: "微软雅黑";
+    font-size: 1.35em;
+    font-weight: 700;
+    top: 150px;
+    color: #ffc865;
+}
+.result_mid_bottom{
+    position: @abs;
+    width: 80%;
+    color: white;
+    top: 260px;
+    left: 10%;
+    font-family: "微软雅黑";
+    font-size: 1.2em;
+    .leftt{
+        position: @rel;
+        left: 0;
+    }
+    .centerr{
+        position: @abs;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+    }
+    .rightt{
+        position: @abs;
+        right: 0;
+    }
+}
+
+.result_bottom{
+    position: @rel;
+    width: 100%;
+    top: 480px;
+    background-color: white;
+    height: auto;
+}
+.result_bottom_block{
+    position:@rel;
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+    &_text{
+        position:@rel;
+        left: 10%;
+        width: 80%;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        .textOne{
+            position: @rel;
+            font-size: 1.2em;
+        }
+        .textTwo{
+            position: @abs;
+            right: 0;
+            top: 8px;
+            color: gainsboro;
+        }
+        .textThree{
+            position: @rel;
+            color: grey;
+        }    
+    }
+}
+
+
+
+.result_foot{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 75px;
+    padding-top: 10px;
+    background-color:#29bde0; 
+    opacity: 0.5;
+    &_leftBlock{
+        z-index: 1212321; 
+        font-family: arial;
+        text-align: center;
+        position: fixed;
+        width: 45%;
+        left: 4%;
+        bottom: 8px;
+        border-radius: 10px;
+        background-color: #f66f6f;
+        padding: 10px;
+        font-size: 1.7em;
+        color: white;
+        }
+    &_rightBlock{
+        bottom: 8px;
+        font-family: arial;
+        text-align: center;
+        position:fixed;
+        right: 4%;
+        width: 45%;
+        border-radius: 10px;
+        background-color: #fbb435;
+        padding: 10px;
+        font-size: 1.7em;
+        color: white;
+        }
+}
+

@@ -80,6 +80,7 @@ function BtLeft(){
 	N2.value=IB.value;	
 	var a=N2.value;
 	fenpei(N2.value);
+	$("#inputBut").css('backgroundSize',(~~IB.value-4)/14*100+'% 100%');
 }
 function BtRight(){
 
@@ -87,11 +88,17 @@ function BtRight(){
 	N2.value=IB.value;
 	var a=N2.value;
 	fenpei(a);
+	$("#inputBut").css('backgroundSize',(~~IB.value-4)/14*100+'% 100%');
 }
 function change(){
 	N2.value=IB.value;
 	var a=N2.value;
 	fenpei(a);
+	var ta=0.1;
+	$("#inputBut").css('backgroundSize',(~~IB.value-4)/14*100+'% 100%');
+//	$("#inputbot").css("backgroundSize"," 75% 100%;")
+//	var inputbot=document.getElementById("inputBut");
+//	inputbot.style.backgroundSize=" 100%";
 	
 }
 var kills=killers.text();

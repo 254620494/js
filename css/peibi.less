@@ -109,11 +109,16 @@ input[type="range"]{
     position: relative;
     cursor: pointer;
     height: 10px;
-    background-color: gainsboro;
-    background:-webkit-linear-gradient(#61bd12, #61bd12) no-repeat,#ddd;
-       background-size:100%;
+//    background-color: gainsboro;
+    background:-webkit-linear-gradient(#61bd12,yellow) no-repeat,#ddd;
+    background-size:50% 100%;
     top: 10px;
     outline: none;
+
+  width: 100%;
+ // background: -webkit-linear-gradient(#61bd12, #61bd12) no-repeat, #ddd;/*设置左边颜色为#61bd12，右边颜色为#ddd*/
+  //background-size: 75% 100%;/*设置左右宽度比例*/
+
 }
 input[type=range]::-webkit-slider-thumb {  
     -webkit-appearance: none;/*清除系统默认样式*/  
@@ -123,6 +128,7 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 5px ; /*外观设置为圆形*/  
     border: 1px solid yellow;
 }
+
 .fapai{
     position: absolute;
     bottom: 30px;
